@@ -27,7 +27,7 @@ namespace ToolBox
 
         public void onClickInsertProjectSettingBtn(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Somethign");
+            
         }
     }
 }

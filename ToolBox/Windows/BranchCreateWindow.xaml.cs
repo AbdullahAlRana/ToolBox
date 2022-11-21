@@ -25,6 +25,7 @@ namespace ToolBox.Windows
             else
             {
                 MessageBox.Show("Story number should be in int!");
+                return;
             }
 
             var storyName = string.Join('-', storyNameInput.Text.Split(' '));

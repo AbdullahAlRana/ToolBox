@@ -1,0 +1,29 @@
+﻿<Window x:Class="ToolBox.Windows.BranchCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToolBox"
+        mc:Ignorable="d"
+        Title="ToolBox" Height="400" Width="302">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Story Number:" TextAlignment="Left" Margin="10,10,10,0"/>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="storyNumberInput" Width="132" HorizontalAlignment="Left" Margin="10,10,10,0" Height="25"/>
+                <TextBlock Text="/" TextAlignment="Left" Margin="10,10,10,0"/>
+            </StackPanel>
+            
+            <TextBlock Text="Story Name:" TextAlignment="Left" Margin="10,10,10,0"/>
+            <TextBox x:Name="storyNameInput" Width="263" HorizontalAlignment="Left" Margin="10,10,10,0" Height="25"/>
+            
+            <StackPanel Orientation="Horizontal">
+                <CheckBox x:Name="isFeature" Content="Feature" Margin="10,10,10,0"/>
+                <CheckBox x:Name="isBugfix" Content="Bugfix" Margin="10,10,10,0"/>
+            </StackPanel>
+            <Button HorizontalAlignment="Left" Margin="10 20" Width="100" FontSize="14" x:Name="submitBtn" Click="onClickSubmitBtn">Create</Button>
+            <TextBlock x:Name="message" FontSize="14" TextWrapping="Wrap" TextAlignment="Center" Margin="10,10,10,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -8,7 +8,8 @@
         Title="ToolBox" Height="400" Width="302">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <Button Margin="10 10" FontSize="14" x:Name="insertProjectSettings" Click="onClickInsertProjectSettingBtn">Insert Project Settings</Button>
+            <Button Margin="10 10" FontSize="14" x:Name="insertProjectSettings" Click="onClickInsertProjectSettingBtn">Insert project settings</Button>
+            <Button Margin="10 10" FontSize="14" x:Name="createNewBranch" Click="onClickCreateBranchBtn">Create new branch</Button>
         </StackPanel>
     </Grid>
 </Window>
